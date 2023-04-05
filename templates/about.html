@@ -1,0 +1,138 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    小怪鸭鸭
+{% endblock %}
+
+
+{% block content %}
+    <section class="slice py-8 bg-dark">
+        <div class="container py-5">
+            <div class="row row-grid align-items-center">
+                <div class="col-lg-8 text-center text-lg-left">
+                    <!-- Heading -->
+                    <h1 class="text-white mb-4">
+                        此处是博主的个人简介
+                    </h1>
+                    <!-- Text -->
+                    <p class="lead text-white opacity-8">
+                        此项目在github开放https://github.com/Xiaoguaiyaya/Blog_xgyy_flask.git，欢迎访问
+                    </p>
+                    <!-- Buttons -->
+                    <div class="mt-5">
+                        <a href="#" class="btn btn-warning btn-lg btn-icon">
+                            <span class="btn-inner--icon">
+                                <i data-feather="edit-3"></i>
+                            </span>
+                            <span class="btn-inner--text">空空</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-bottom">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <span class="badge badge-primary badge-pill">关于我的废人简介</span>
+            <div class="row mt-4">
+                <div class="col-lg-6 pr-lg-5">
+                    <p class="h5 lh-180 mb-3">
+                        第一次自己做网站，前端使用的是bootstrap的一个模板，后端用的flask微框架，后端也是使用的别人的，我只是拼接修改
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <p class="lead lh-180">
+                        此处不知道写啥
+                    </p>
+                    <p class="lead lh-180">
+                        随便截几张图片
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-6">
+                    <img src="../static/img/about1.png" alt="Image" class="rounded-lg img-fluid" />
+                    <div class="text-right mt-4">
+                        <img src="../static/img/about2.png" alt="Image" class="rounded-lg img-fluid w-50" />
+                    </div>
+                </div>
+                <div class="col-lg-7 col-6">
+                    <img src="../static/img/about3.png" alt="Image" class="rounded-lg img-fluid w-75" />
+                    <div class="text-right mt-4">
+                        <img src="../static/img/about4.png" alt="Image" class="rounded-lg img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slice slice-lg pt-10 bg-primary">
+        <!-- SVG separator -->
+        <div class="shape-container shape-line shape-position-top shape-orientation-inverse">
+            <svg width="2560px" height="100px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" viewBox="0 0 2560 100" style="enable-background:new 0 0 2560 100;" xml:space="preserve" class="">
+                <polygon points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+        <!-- Container -->
+        <div class="container">
+            <div class="row row-grid">
+                <div class="col-lg-8">
+                    <!-- Badge -->
+                    <span class="badge badge-warning badge-pill">此处放博主技术栈</span>
+                    <!-- Title -->
+                    <h2 class="my-4 text-white">简要概述我在编程方面的倾向</h2>
+                    <!-- Text -->
+                    <p class="lead text-white lh-190">
+                        以后再写
+                    </p>
+                </div>
+            </div>
+            <!-- Milestones -->
+            <div class="row mt-6">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">35%</h3>
+                                    <p class="text-muted mb-0">
+                                        Python——flask
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">25%</h3>
+                                    <p class="text-muted mb-0">
+                                        HTML,css,javascript,jquery,DOM,Ajax
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card shadow-lg rounded-lg border-0 mb-sm-0">
+                                <div class="p-4 text-center text-sm-left">
+                                    <h3 class="mb-0">40%</h3>
+                                    <p class="text-muted mb-0">
+                                        c,java,php,jsp,sql,matlab
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

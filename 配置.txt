@@ -1,0 +1,19 @@
+https://pypi.tuna.tsinghua.edu.cn/simple
+pip install flask_SQLAlchemy -i https://pypi.tuna.tsinghua.edu.cn/simple
+cd E:\pythonprojes\flaskProject5\Scripts
+    {% if username %}
+
+    {% else %}
+
+    {% endif %}
+
+{% extends 'base.html' %}
+
+{% block title %}
+    小怪鸭鸭
+{% endblock %}
+
+
+{% block content %}
+
+{% endblock %}
