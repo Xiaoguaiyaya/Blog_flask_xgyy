@@ -1,10 +1,12 @@
 from flask import *
 
 import config
+from decorators import login_limit
 
 app = Flask(__name__)
 app.config.from_object(config)
 app.secret_key = "flaskblog"
+
 app.debug = True
 
 # 注册蓝图
@@ -15,6 +17,26 @@ app.register_blueprint(blog)
 
 from model import *
 
+import openai
+
+chat_gpt_key = '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'
+# 将 Key 进行传入
+openai.api_key = chat_gpt_key
+
+def completion(prompt):
+    response = openai.Completion.create(
+        # text-davinci-003 是指它的模型
+        model="text-davinci-003",
+        prompt=prompt,
+        temperature=0.5,
+        max_tokens=2048,
+        n=1,
+        stop=None
+    )
+
+    message = response.choices[0].text
+    #message=prompt
+    return message
 
 # 上下文处理器，定义用户当前是否登录状态，全局可访问
 @app.context_processor
@@ -46,5 +68,17 @@ def internal_server_error(e):
 	return render_template('404.html'), 404;
 
 
+@app.route('/tiw',methods=["POST","GET"])
+@login_limit
+def hello_world():  # put application's code here
+    return render_template('test.html')
+
+@app.route('/ans',methods=["POST","GET"])
+@login_limit
+def ans():  # put application's code here
+    result = request.form.get('name')
+    answer = completion(result)
+    return render_template('test.html', answer=answer)
+
 if __name__ == '__main__':
-	app.run()
+	app.run(host='192.168.33.39' ,port=12345)

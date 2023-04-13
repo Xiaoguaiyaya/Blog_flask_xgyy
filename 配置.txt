@@ -1,5 +1,5 @@
 https://pypi.tuna.tsinghua.edu.cn/simple
-pip install flask_SQLAlchemy -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install openai -i https://pypi.tuna.tsinghua.edu.cn/simple
 cd E:\pythonprojes\flaskProject5\Scripts
     {% if username %}
 

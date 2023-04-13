@@ -12,5 +12,5 @@ def login_limit(func):
             return func(*args, **kwargs)
         else:
             # 如果没登录，我们就将它重定向到登录页面，这里大家也可以写一个权限错误的提示页面进行跳转
-            return redirect(url_for('/login'))
+            return redirect(url_for('index.login'))
     return wrapper

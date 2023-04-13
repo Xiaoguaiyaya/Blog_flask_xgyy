@@ -5,8 +5,8 @@
 {% endblock %}
 
 {% block css %}
-<link rel="stylesheet" type="text/css" href="/static/editor/css/editormd.css"/>
-<script src="/static/editor/editormd.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = '/editor/css/editormd.css') }}"/>
+<script src="{{ url_for('static', filename = '/editor/editormd.js') }}" type="text/javascript"></script>
 {% endblock %}
 
 {% block content %}
