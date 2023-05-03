@@ -19,7 +19,7 @@ from model import *
 
 import openai
 
-chat_gpt_key = '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'
+chat_gpt_key = ''
 # 将 Key 进行传入
 openai.api_key = chat_gpt_key
 
